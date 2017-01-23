@@ -40,10 +40,10 @@ namespace Wpf2
             return firstName;
         }
 
-        internal int GetAge() {
-            int age = 0;
+        internal String GetAge() {
+            String age = "";
             if (CurrentPerson != null) {
-                age = CurrentPerson.Age;
+                age = CurrentPerson.Age.ToString();
             }
             return age;
         }

@@ -34,14 +34,14 @@ namespace Wpf2
             textBoxTelephone.Text = "";
             PersonCount.Content = controller.PersonCount;
             Index.Content = controller.PersonIndex;
-        }
+        } 
 
         private void UpdateWindow() {
             PersonCount.Content = controller.PersonCount;
             Index.Content = controller.PersonIndex;
             textBoxFirstName.Text = controller.GetFirstname();
             textBoxLastName.Text = controller.GetLastName();
-            textBoxAge.Text = controller.GetAge() + ""; //(string) typecast does not work.... ????
+            textBoxAge.Text = controller.GetAge();
             textBoxTelephone.Text = controller.GetTelephone();
         }
 
